@@ -35,5 +35,8 @@ public interface IPHPDebugCorePreferenceKeys
 
 	public static final String ATTR_HTTP_POST = "ATTR_HTTP_POST"; //$NON-NLS-1$
 	public static final String ATTR_HTTP_GET = "ATTR_HTTP_GET"; //$NON-NLS-1$
+	
+	public static final String ATTR_IDE_KEY_AUTOGENERATE = "ATTR_IDE_KEY_AUTOGENERATE"; //$NON-NLS-1$
+	public static final String ATTR_IDE_KEY_VALUE = "ATTR_IDE_KEY_VALUE"; //$NON-NLS-1$
 
 }
