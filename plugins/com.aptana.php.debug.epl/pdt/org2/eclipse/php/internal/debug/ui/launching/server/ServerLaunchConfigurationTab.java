@@ -253,6 +253,7 @@ public class ServerLaunchConfigurationTab extends AbstractLaunchConfigurationTab
 	protected void createServerSelectionControl(Composite parent)
 	{
 		Font font = parent.getFont();
+		/*
 		GridData data = new GridData(GridData.HORIZONTAL_ALIGN_FILL);
 		Composite composite = new Composite(parent, SWT.NONE);
 		GridLayout layout = new GridLayout();
@@ -261,11 +262,14 @@ public class ServerLaunchConfigurationTab extends AbstractLaunchConfigurationTab
 		layout.numColumns = 2;
 		composite.setLayout(layout);
 		composite.setLayoutData(data);
-
-		Group group = new Group(composite, SWT.NONE);
+		/*/
+		GridLayout layout;
+		GridData data;
+		//*/
+		
+		Group group = new Group(parent, SWT.NONE);
 		group.setText(PHPServerUIMessages.getString("ServerTab.server")); //$NON-NLS-1$
 		GridLayout ly = new GridLayout();
-		ly.numColumns = 1;
 		GridData gridData = new GridData(GridData.FILL_HORIZONTAL);
 		group.setLayout(ly);
 		group.setLayoutData(gridData);
@@ -481,6 +485,7 @@ public class ServerLaunchConfigurationTab extends AbstractLaunchConfigurationTab
 	public void createServerControl(Composite parent)
 	{
 		createServerSelectionControl(parent);
+		/*
 		GridData data = new GridData(GridData.HORIZONTAL_ALIGN_FILL);
 		Composite composite = new Composite(parent, SWT.NONE);
 		GridLayout layout = new GridLayout();
@@ -489,6 +494,7 @@ public class ServerLaunchConfigurationTab extends AbstractLaunchConfigurationTab
 		layout.numColumns = 2;
 		composite.setLayout(layout);
 		composite.setLayoutData(data);
+		*/
 		handleServerSelection();
 	}
 
